@@ -79,12 +79,12 @@
             <button class="btn rounded-full bg-purple-400 text-white">
                 Life
                 <img src="/Group 23.svg" alt="">
-                <span>1</span>
+                <span id="current-life">5</span>
               </button>
               <button class="btn rounded-full bg-purple-400 text-white">
                 score
                <img src="/monetization_on.svg" alt="">
-                <span>1</span>
+                <span id="current-score">0</span>
               </button>
         </div>
       </div>
@@ -93,13 +93,14 @@
     </section>
     <!-- playground end -->
     <!-- final score start  -->
-    <section class="score flex justify-center items-center min-h-screen hidden">
+    <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
         <div class="score text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+          <h4 class="text-3xl">Game Over !</h4>
             <h1 class="text-6xl">
                 <span class="font-extrabold">Score:</span>
-                <span>14</span>
+                <span class="game-score">14</span>
             </h1>
-            <button class="btn text-black">Play Again</button>
+            <button onclick="play()" class="btn text-black">Play Again</button>
             <p class="text-red-500">Practice will make you a pro</p>
         </div>
 
